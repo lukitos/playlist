@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'avenir';
+  src: url('../fonts/AvenirNextLTPro-Regular.otf');
+}
+
+body, p {
+  margin: 0;
+  font-family: avenir, sans-serif, serif;
+  font-size: 20px;
+}
+
+button {
+  font-family: avenir, sans-serif, serif;
+}
+
+.container-custom {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+  background-color: #9B9B8C;
+}
+
+.header-splash {
+  height: 10%;
+  border-bottom: 2px solid black;
+}
+
+.header-page {
+  position: relative;
+  color: white;
+  height: 20%;
+  width: 100%;
+}
+
+.header-title {
+  position: absolute;
+  left: 100px;
+  bottom: 10px;
+  font-size: 25px;
+}
+
+.main-splash {
+  height: 80%;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.main-splash span {
+  color: purple;
+  font-size: 48px;
+}
+
+.left-section {
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin: 0 auto;
+}
+
+.left-box {
+  width: 200px;
+  height: 200px;
+  margin: 25% auto;
+  text-align: center;
+}
+
+.right-section {
+  height: 100%;
+  width: 50%;
+  float: right;
+  position: relative;
+}
+
+.right-section::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.19;
+  z-index: 1;
+  background-image: url('../resources/track.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#tracks-container {
+  height: 100%;
+  width: 175px;
+  margin: 0 auto;
+}
+
+#albums-container {
+  margin-left: 100px;
+  overflow: auto;
+}
+
+.img-track-album {
+  width: 175px;
+  height: 175px;
+  margin: 5px 0;
+}
+
+.img-thumbnail-album {
+  /*margin: 20px 30px 50px;*/
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.img-thumbnail-album:first-child {
+  margin-left: 0;
+}
+
+.album-description {
+  border: 2px solid black;
+  margin: 0 30px 20px 100px;
+  background-color: #EEEEEE;
+  width: 75%;
+  height: 150px;
+  overflow: auto;
+}
+
+.btn-custom {
+  color: white;
+  font-size: 20px;
+  background-color: #353526;
+  padding: 10px 35px;
+}
+
+.btn-custom:hover {
+  color: white;
+}
+
+.btn-spacer {
+  margin: 5px;
+}
+
+.btn-container {
+  margin-left: 95px;
+}
+
+/*.spacer {
+  padding: 45px;
+}*/
+
+footer {
+  color: white;
+  height: 10%;
+  width: 100%;
+  /*text-align: center;*/
+  position: fixed;
+  padding: 20px 100px;
+  bottom: 0;
+  background-color: #686859;
+}
